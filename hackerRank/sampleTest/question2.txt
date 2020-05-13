@@ -11,7 +11,6 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 
-
 class Result {
 
     /*
@@ -25,12 +24,14 @@ class Result {
 
     public static List<Integer> oddNumbers(int l, int r) {
     // Write your code here
-        //make l odd
+        //create the list
         List<Integer> oddList = new ArrayList<Integer>();
+        //make l odd
         if (l % 2 == 0)
         {
             l++;
         }
+        //go through the list adding the numbers
         while (l <= r)
         {
             oddList.add(l);
@@ -40,7 +41,6 @@ class Result {
     }
 
 }
-
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
